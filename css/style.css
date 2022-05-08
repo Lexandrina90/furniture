@@ -146,13 +146,76 @@ body{
 .page {
     flex: 1 1 auto;
 }
-
-/*.......HEADER-BLOCK..........................................................*/
+.page__main-block {
+}
 
 
 
 /*.......MAIN-BLOCK..........................................................*/
 
+.main-block {
+    position: relative;
+}
+.main-block__container {
+}
+.main-block__body {
+    display: flex;
+    align-items: flex-start;
+    padding: 101px 0px 140px 0px;
+    position: relative;
+}
+.main-block__image {
+    flex: 0 0 34.25%;
+    width: 411px;
+    height: 560px;
+    object-fit: cover;
+}
+._ibg {
+}
+.main-block__content {
+    flex: 0 1 65.75%;
+    background: #154444;
+    z-index: 2;
+    min-width: 653px;
+    height: 560px;
+    padding: 101px 0px 0px 100px;
+
+}
+.main-block__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 121%;
+    color: #FFF;
+    padding: 0px 0px 20px 0px;
+}
+.main-block__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #FFFFFF;
+    max-width: 488px;
+}
+.main-block__text:not(:last-child){
+    padding: 0px 0px 35px 0px;
+}
+
+.main-block__button {
+    background: #FFFFFF;
+    min-height: 56px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #154444;
+    transition: all 0.3s ease 0s;
+}
+.main-block__button:hover{
+    background-color: #0e2f2f;
+    color: #FFF;
+} 
 
 
 /*.......Advantages..........................................................*/
