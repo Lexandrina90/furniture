@@ -151,10 +151,11 @@ body{
 }
 .page__trust {
 }
+.page__about {
+}
 
 /* ...........HEADER-BLOCK..........................................*/
 .header-block {
-    text-align: center;
 }
 .header-block__title {
     font-weight: 700;
@@ -278,6 +279,7 @@ body{
 }
 .trust__header {
     margin: 0px 0px 40px 0px;
+    text-align: center;
 }
 
 .trust__items {
@@ -304,7 +306,95 @@ body{
     }
 }
 
-/*.......PRACTICE..........................................................*/
+/*.......ABOUT..........................................................*/
+.about {
+    padding: 0px 0px 140px 0px;
+}
+.about__container {
+}
+.about__body {
+    display: flex;
+    align-items: flex-start;
+}
+.about__image {
+    flex: 0 0 54%;
+    position: relative;
+    padding: 0px 0px 49.666% 0px;
+    background: #DEE4E2;
+    width: 100%;
+    height: 100%;
+    
+}
+.about__image img{
+    position: absolute;
+    width: 596px;
+height: 577px;
+    top: -35px;
+    left: 0;
+    object-fit: cover;
+}  
+
+
+.about__content {
+    flex: 1 1 auto;
+    padding: 47px 0px 0px 100px;
+}
+.about__header .header-block__title {
+    line-height: 125%;
+    font-family: 'Montserrat';
+
+}
+.about__header:not(:last-child) {
+    margin: 0px 0px 20px 0px;
+} 
+.about__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #444444;
+}
+
+.about__top:not(:last-child) {
+    margin: 0px 0px 40px 0px;
+
+}
+
+.about__items {
+}
+.about__item {
+}
+.about__item:not(:last-child) {
+    margin: 0px 0px 30px 0px;
+}
+
+.item-about {
+    display: flex;
+}
+.item-about__icon {
+}
+.item-about__body {
+    flex: 1 1 auto;
+    padding: 0px 0px 0px 30px;
+}
+.item-about__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #244D4D;
+}
+.item-about__title:not(:last-child) {
+    margin: 0px 0px 14px 0px;
+}
+.item-about__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    color: #383738;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    width: 306px;
+}
 
 /*.......FOOTER..........................................................*/
 .footer {
