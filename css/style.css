@@ -430,59 +430,105 @@ body{
     .about__image:not(:last-child) {
         margin: 0px 0px 30px 0px;
     }
-
+}
 /*.............POPULAR...................................................*/
-
+.page__popular {
+}
 .popular {
-    padding: 0px 0px 140px 0px;
 }
 .popular__container {
 }
-.page__header {
-   margin: 0px 0px 80px 0px; 
+._container {
+}
+.popular__header {
 }
 .header-block {
+    max-width: 819px;
+    margin: 0px 0px 80px 0px;
 }
 .header-block__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 162%;
+    color: #242424;
 }
+.header-block__title:not(:last-child) {
+    padding: 0px 0px 20px 0px;
+} 
 .header-block__subtitle {
+    line-height: 135%;
+    color: #383738;
 }
 .popular__body {
+    display: flex;
 }
 .popular__column {
+    flex: 0 1 33.333%;
 }
 .popular__item {
+    background-color: #FFF;
+    max-width: 380px;
 }
 .item-popular {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .item-popular__image {
+    display: block;
 }
-._ibg {
-}
+
 .item-popular__content {
+    flex:  1 1 auto; 
 }
 .content-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding: 26px;
 }
-.content-body__column {
+.content__column {
+    flex: 0 1 auto; 
 }
-.content-body__item {
+.column__item {
+} 
+.item-column {
 }
-.item-content {
+.item-column:not(:last-child) {
 }
-.item-content__title {
+.item-column__title {
+    width: 170px;
+    line-height: 135%;
+    color: #242424;
 }
-.item-content__price {
-}
-.content-body__buttons {
-}
-.button-like {
-}
-.button-frame {
-}
-.content-body__button {
+.item-column__title:not(:last-child) {
+    padding: 0px 0px 20px 0px;
 }
 
-/*.......FOOTER..........................................................*/
-.footer {
-
+.item-column__price {
+    font-size: 24px;
+    line-height: 129%;
+    color: #154444;
+}
+.item-column__buttons {
+   padding: 0px 0px 20px 20px;
+   align-self: flex-end;
+}
+.item-column_button {
+}
+.b_like {
+}
+.b_main {
+}
+.item-column__button {
+    background: #244D4D;
+    min-height: 32px;
+}
+.buy_b {
+    font-size: 12px;
+    line-height: 175%;
+    color: #FFFFFF;
+    padding: 5px 14px;
 }
