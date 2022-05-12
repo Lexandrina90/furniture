@@ -432,19 +432,34 @@ body{
     }
 }
 /*.............POPULAR...................................................*/
-.page__popular {
-}
+/* Адаптив не сделан до конца! разобраться с изображениями!!!!!!!! */
 .popular {
+    padding: 0px 0px 140px 0px;
+}
+@media (max-width: 992px) {
+    .popular {
+    padding: 0px 0px 80px 0px;
+    }
+}
+@media (max-width: 767px) {
+    .popular {
+    padding: 0px 0px 40px 0px;
+    }
 }
 .popular__container {
 }
 ._container {
 }
 .popular__header {
+    margin: 0px 0px 80px 0px;
+}
+@media (max-width: 767px) {
+    .popular__header {
+    margin: 0px 0px 40px 0px;
+    }
 }
 .header-block {
     max-width: 819px;
-    margin: 0px 0px 80px 0px;
 }
 .header-block__title {
     font-family: 'Montserrat';
@@ -462,13 +477,29 @@ body{
 }
 .popular__body {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
 }
 .popular__column {
     flex: 0 1 33.333%;
+    padding: 0 15px;
 }
+
+@media (max-width: 1230px) {
+    .popular__column{
+        flex: 0 1 50%;
+    }
+}
+
+@media (max-width: 823px) {
+    .popular__column{
+        flex: 0 1 100%;
+    }
+}
+
 .popular__item {
     background-color: #FFF;
-    max-width: 380px;
+    max-width: 380px;  
 }
 .item-popular {
     display: flex;
@@ -477,6 +508,7 @@ body{
 }
 .item-popular__image {
     display: block;
+    object-fit: scale-down;
 }
 
 .item-popular__content {
