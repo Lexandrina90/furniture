@@ -834,7 +834,6 @@ body{
         top: 17px;
     }
     
-   
 }
 @media (max-width: 320px) {
     .menu-furniture__item {
@@ -846,4 +845,37 @@ body{
     .furniture__image:not(:last-child) {
         margin: 0px 0px 100px 0px;
     }
+}
+/*..............CUSTOMERS...................*/
+.page__customers {
+}
+.customers {
+}
+.customers__container {
+}
+._container {
+}
+.customers__body {
+}
+.customers__image {
+}
+.customers__content {
+}
+.customers__top {
+}
+.customers__title {
+}
+.customers__text {
+}
+.customers__items {
+}
+.customers__item {
+}
+.item-customers {
+}
+.item-customers__icon {
+}
+.item-customers__body {
+}
+.item-customers__text {
 }
