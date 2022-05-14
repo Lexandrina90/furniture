@@ -157,6 +157,8 @@ body{
 }
 .page__furniture {
 }
+.page__customers {
+}
 /* ...........HEADER-BLOCK..........................................*/
 .header-block {
 }
@@ -847,35 +849,114 @@ body{
     }
 }
 /*..............CUSTOMERS...................*/
-.page__customers {
-}
+
 .customers {
+    padding: 0px 0px 140px 0px;
 }
 .customers__container {
 }
-._container {
-}
 .customers__body {
+    display: flex;
+    align-items: flex-start;
 }
 .customers__image {
+    flex: 0 0 38%;
+    position: relative;
+    margin: 0px 0px 0px 100px;
+    z-index: 50;
 }
+.customers__image img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.customers__image::before{
+    content: '';
+    position: absolute;
+    background: #244D4D;
+    width: 489px;
+    height: 489px;
+    border: 2px solid #244D4D;
+    border-radius: 50%;
+    left: -105px;
+    top: 0px;
+    display: block;
+    z-index: -1;
+}
+
 .customers__content {
+    flex: 1 1 auto;
+    padding: 105px 0px 0px 105px;
 }
-.customers__top {
+
+.customers__top:not(:last-child) {
+    margin: 0px 0px 40px 0px;
 }
 .customers__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+}
+.customers__title:not(:last-child){
+    margin: 0px 0px 20px 0px;
 }
 .customers__text {
+    line-height: 135%;
+    color: #383738;
+    font-weight: 400;
+    max-width: 535px;
 }
 .customers__items {
+    display: flex;
+    align-items: flex-start;
 }
-.customers__item {
+.customers-item__icon {
+    flex: 0 0 15%;
+    position: relative;
 }
-.item-customers {
+.customers-item__content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    
 }
-.item-customers__icon {
+.customers-item__name {
+    flex: 1 1 auto;
+    margin: 0px 0px 6px 0px;
+   
 }
-.item-customers__body {
+.customers-item__rank {
+    display: flex;
 }
-.item-customers__text {
+.rank-customers {
+}
+.rank-customers__icon {
+    flex: 0 1 50%;
+}
+.rank-customers__value {
+    flex: 1 1 50%;
+    margin: 0px 0px 0px -15px;
+}
+@media (max-width: 1030px) {
+    .customers__title {
+        font-size: 28px;
+    }
+    .customers__text {
+        font-size: 16px;
+    }
+    .customers__content{
+        margin-left: 20px;
+    }   
+}
+@media (max-width: 915px){
+    .customers__body {
+        flex-direction: column;
+    }
+    .customers__image {
+
+    }
 }
