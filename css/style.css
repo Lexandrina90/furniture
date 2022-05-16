@@ -159,6 +159,8 @@ body{
 }
 .page__customers {
 }
+.page__register {
+}
 /* ...........HEADER-BLOCK..........................................*/
 .header-block {
 }
@@ -959,4 +961,76 @@ body{
     .customers__image {
 
     }
+}
+/*..........REGISTER.................................*/
+
+.register {
+    margin: 120px 0px 140px 0px;
+    background: #F4F6F6;
+}
+.register__container {
+}
+.register__body {
+    padding: 68px 297.5px 55px 297.5px;
+    align-items: center;
+
+}
+.register__top{
+    margin: 0px 0px 40px 0px;
+}
+.register__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    text-align: center;
+    color: #222222;
+}
+.register__title:not(:last-child){
+    margin: 0px 0px 20px 0px;
+}
+.register__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;;
+    text-align: center;
+    color: #222222;
+    max-width: 493px;;
+}
+.register__form {
+    display: flex;
+    flex: 0 1 50%;
+    align-items: center;
+}
+.register__input {
+    width: 100%;
+    flex: 1 1 auto;
+    min-height: 67px;
+   
+}
+.register__input:focus{
+    color: #000;
+}
+.register__input::placeholder{
+    content: '';
+    background: url('/img/register/icon/01.svg') no-repeat;
+    padding-left: 45px;
+    background-position: 17px 50% ;
+}
+.register__button {
+    position: relative;
+    background: #305F64;
+    display: flex;
+    min-height: 52px;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    color: #FFF;
+    padding: 0px 32px; 
+    transition: all 0.3sease 0s;
+    right: 130px;
+}
+.register__button:hover{
+    background: #21484d;;
 }
